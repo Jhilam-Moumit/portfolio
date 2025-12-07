@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jhilam Moumit , Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background: linear-gradient(180deg, #071022 0%, #07182a 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:24px;
+    }
+
+    .container{max-width:1000px;margin:0 auto}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .brand h1{font-size:18px;margin:0}
+    .brand p{margin:0;font-size:13px;color:var(--muted)}
+
+    nav{display:flex;gap:12px}
+    .nav-link{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--muted);font-size:14px}
+    .nav-link:hover{background:var(--glass);color:#fff}
+
+    /* Hero */
+    .hero{gap:20px;align-items:start;margin-bottom:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+
+    .intro h2{margin:0 0 8px 0;font-size:26px}
+    .intro p{margin:0;color:var(--muted)}
+
+    .profile-photo{width:100%;height:100%;min-height:320px;border-radius:12px;background:linear-gradient(180deg,#0e2a3a 0%, #082026 100%);display:flex;align-items:center;justify-content:center;flex-direction:column}
+    .profile-photo .placeholder{width:120px;height:120px;border-radius:999px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .small-muted{color:var(--muted);font-size:13px;margin-top:12px}
+
+    /* grid for details */
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .full{grid-column:1/-1}
+
+    /* skills */
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    /* project */
+    .project{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:12px;background:rgba(255,255,255,0.01)}
+    .project h4{margin:0}
+    .project p{margin:4px 0 0 0;color:var(--muted);font-size:13px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:var(--accent);color:#042029;text-decoration:none;font-weight:600}
+
+    /* contact */
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .contact-item{display:flex;gap:10px;align-items:center}
+    .muted{color:var(--muted)}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <!-- <div class="avatar">JM</div> -->
+                 <img src="./photo.jpeg" alt="Jhilam Moumit" style="width:100px; height:100px; border-radius:50%; object-fit:cover;">
+        <div>
+          <h1>Jhilam Moumit</h1>
+          <p class="muted">Student , Computer Science & Engineering</p>
+        </div>
+      </div>
+
+      <nav>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Hi , I'm Jhilam Moumit</h2>
+        <p>I am a Computer Science & Engineering student at Faridpur Engineering College (expected 2026). I build web interfaces and lightweight apps using HTML, CSS, JavaScript and Python. I enjoy learning new tools like WordPress and Photoshop.My goal is to contribute to impactful solutions that leverage the power of technology</p>
+
+        <div style="margin-top:18px" class="grid">
+          <div>
+            <h3 style="margin:0 0 8px 0">Contact</h3>
+            <div class="contact-list">
+              <div class="contact-item"><strong>Email:</strong><span class="muted">&nbsp; jhilammoumit@gmail.com</span></div>
+              <div class="contact-item"><strong>Phone:</strong><span class="muted">&nbsp; 01710107792</span></div>
+              <div class="contact-item"><strong>Location:</strong><span class="muted">&nbsp; Dhaka, Bangladesh</span></div>
+              <div class="contact-item"><strong>LinkedIn:</strong><a class="muted" href="https://www.linkedin.com/in/jhilam-moumit-798b80343/" target="_blank">&nbsp; View profile</a></div>
+              <div class="contact-item"><strong>GitHub:</strong><a class="muted" href="https://github.com/Jhilam-Moumit" target="_blank">&nbsp; github.com/Jhilam-Moumit</a></div>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin:0 0 8px 0">Education</h3>
+            <p class="muted" style="margin:0">B.Sc. in Computer Science & Engineering</p>
+            <p class="muted" style="margin:2px 0 0 0">Faridpur Engineering College , Expected 2026</p>
+
+            <h3 style="margin:12px 0 8px 0">Skills</h3>
+            <div class="skill-list">
+              <span class="skill">HTML</span>
+              <span class="skill">CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Python</span>
+              <span class="skill">WordPress</span>
+              <span class="skill">Figma</span>
+              <span class="skill">Photoshop</span>
+              <span class="skill">Teamwork</span>
+              <span class="skill">Communication</span>
+            </div>
+          </div>
+
+          <div class="full" style="margin-top:6px">
+            <h3 style="margin:0 0 8px 0">About</h3>
+            <p class="muted">I enjoy learning new technologies and building clean, user-focused interfaces. My current focus is on front-end web development.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="card" style="margin-bottom:18px">
+      <h3 style="margin-top:0">Projects</h3>
+
+      <div class="project">
+        <div>
+          <h4>To-Do List</h4>
+          <p class="muted">A simple and clean task management app to add, edit and remove tasks using HTML, CSS and JavaScript.</p>
+        </div>
+        <!-- <div style="display:flex;gap:8px;align-items:center">
+          <a class="btn" href="#" id="demoBtn">Demo (add link)</a>
+        </div> -->
+      </div>
+
+    </section>
+
+    <section id="contact" class="card">
+      <h3 style="margin-top:0">Contact Me</h3>
+      <p class="muted">Want to work together or have a question? Send me a message.</p>
+
+      <form id="contactForm" style="display:grid;gap:10px;margin-top:12px">
+        <input name="name" placeholder="Your name" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" required>
+        <input name="email" placeholder="Your email" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" required>
+        <textarea name="message" rows="4" placeholder="Message" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" required></textarea>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button type="submit" class="btn">Send</button>
+          <small class="muted">Or email me directly at <strong>jhilammoumit@gmail.com</strong></small>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Jhilam Moumit , Built with HTML, CSS & JavaScript
+    </footer>
+
+  </div>
+
+  <!-- Modal (hidden by default) -->
+  <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(2,6,23,0.7);align-items:center;justify-content:center;padding:24px">
+    <div style="max-width:800px;width:100%;background:#02101a;padding:20px;border-radius:12px">
+      <h3 style="margin-top:0">Project Demo</h3>
+      <p class="muted">You haven't added a demo link yet. To add a demo link, edit the <code>href</code> of the demo button in the Projects section or replace the placeholder link with your live demo URL.</p>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+        <a id="addDemoLink" class="btn" href="#">Edit (open file)</a>
+        <button id="closeModal" class="btn" style="background:rgba(255,255,255,0.06);color:var(--accent)">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Demo button shows modal when link is placeholder '#'
+    const demoBtn = document.getElementById('demoBtn');
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('closeModal');
+
+    demoBtn.addEventListener('click', function(e){
+      const href = this.getAttribute('href');
+      if(!href || href === '#'){
+        e.preventDefault();
+        modal.style.display = 'flex';
+      }
+    });
+
+    closeModal.addEventListener('click', ()=> modal.style.display = 'none');
+
+    // Contact form - opens mailto (simple fallback)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      if(!name || !email || !message) return alert('Please fill in all fields');
+
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = `mailto:jhilammoumit@gmail.com?subject=${subject}&body=${body}`;
+    });
+
+    // small: smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
